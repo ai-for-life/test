@@ -1,25 +1,102 @@
-<ion-header no-shadow>
-  <ion-navbar>
-    <ion-buttons end *ngIf="showSkip">
-      <button ion-button (click)="startApp()" color="primary">{{ 'TUTORIAL_SKIP_BUTTON' | translate}}</button>
-    </ion-buttons>
-  </ion-navbar>
-</ion-header>
+<!--<ion-header no-shadow>-->
+  <!--<ion-navbar>-->
+    <!--<ion-buttons end *ngIf="showSkip">-->
+      <!--<button ion-button (click)="startApp()" color="primary">{{ 'TUTORIAL_SKIP_BUTTON' | translate}}</button>-->
+    <!--</ion-buttons>-->
+  <!--</ion-navbar>-->
+<!--</ion-header>-->
 
 <ion-content no-bounce>
   <ion-slides pager="true" dir="{{dir}}" (ionSlideWillChange)="onSlideChangeStart($event)">
-    <ion-slide *ngFor="let slide of slides">
-      <img [src]="slide.image" class="slide-image" />
-      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
-      <p [innerHTML]="slide.description"></p>
-    </ion-slide>
+    <!--<ion-slide *ngFor="let slide of slides">-->
+      <!--<img [src]="slide.image" class="slide-image" />-->
+      <!--<h2 class="slide-title" [innerHTML]="slide.title"></h2>-->
+      <!--<p [innerHTML]="slide.description"></p>-->
+    <!--</ion-slide>-->
     <ion-slide>
-      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image" />
-      <h2 class="slide-title">{{ 'TUTORIAL_SLIDE4_TITLE' | translate }}</h2>
-      <button ion-button icon-end large clear (click)="startApp()">
-        {{ 'TUTORIAL_CONTINUE_BUTTON' | translate }}
-        <ion-icon name="arrow-forward"></ion-icon>
-      </button>
+      <p margin-bottom>
+        <button ion-button icon-end large class="logo-button" color="light">{{ 'LOGO' | translate }}</button>
+      </p>
+      <div class="button-container">
+        <p>
+          <button ion-button icon-end large (click)="redirectToLogin()">
+            {{ 'LOGIN_BUTTON' | translate }}
+          </button>
+        </p>
+        <p>
+          <button ion-button icon-end large (click)="redirectToRegister()">
+            {{ 'REGISTER_BUTTON' | translate }}
+          </button>
+        </p>
+      </div>
     </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 offset-lg-2 offset-xl-2>
+            <ion-row>
+
+              <ion-col col-12>
+                <button ion-button icon-end float-right (click)="redirectToLogin()">
+                  {{ 'LOGIN_BUTTON' | translate }}
+                </button>
+              </ion-col>
+              <ion-col col-12 text-center>
+                <h1 ion-text text-uppercase>{{ 'MY_WILL' | translate }}</h1>
+                <p>{{ 'MY_WILL_DESC' | translate }}</p>
+              </ion-col>
+              <ion-col col-6 text-center class="feature-box">
+                <ion-row>
+                  <ion-col offset-2 col-8>
+                    <ion-icon name="person"></ion-icon>
+                    <p>{{ 'MY_WILL_DESC_1' | translate }}</p>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+              <ion-col col-6 text-center class="feature-box">
+                <ion-row>
+                  <ion-col offset-2 col-8>
+                    <ion-icon name="star"></ion-icon>
+                    <p>{{ 'MY_WILL_DESC_2' | translate }}</p>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+              <ion-col col-6 text-center class="feature-box">
+                <ion-row>
+                  <ion-col offset-2 col-8>
+                    <ion-icon name="home"></ion-icon>
+                    <p>{{ 'MY_WILL_DESC_3' | translate }}</p>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+              <ion-col col-6 text-center class="feature-box">
+                <ion-row>
+                  <ion-col offset-2 col-8>
+                    <ion-icon name="cloud-download"></ion-icon>
+                    <p>{{ 'MY_WILL_DESC_4' | translate }}</p>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+
+              <ion-col col-12 text-center>
+                <h1 ion-text text-uppercase>{{ 'MY_WORTH' | translate }}</h1>
+                <p>{{ 'MY_WORTH_DESC' | translate }}</p>
+              </ion-col>
+              <ion-col col-12 text-center class="feature-box">
+                <ion-row>
+                  <ion-col col-5 text-center>
+                    <ion-icon name="pie"></ion-icon>
+                    <p>{{ 'MY_WORTH_DESC_1' | translate }}</p>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
   </ion-slides>
 </ion-content>

@@ -64,5 +64,21 @@
   "CARDS_TITLE": "Social",
 
   "SEARCH_TITLE": "Search",
-  "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\""
+  "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\"",
+
+
+
+
+  "LOGIN_BUTTON": "Login",
+  "REGISTER_BUTTON": "Register",
+  "LOGO": "Wilbr Logo",
+  "MY_WILL": "My Will",
+  "MY_WILL_DESC": "Meet Wilbr, your personal Will generator that helps you ensure you leave the things you love to the one's you love.",
+  "MY_WILL_DESC_1": "Tell us about yourself (name, address, martial status, children)",
+  "MY_WILL_DESC_2": "Nominate your beneficiaries.",
+  "MY_WILL_DESC_3": "Consider how you'd like your assets distributed and to who, including specific gifts.",
+  "MY_WILL_DESC_4": "Simply download your Will, digitally sign it and finally upload it for legal approval.",
+  "MY_WORTH": "My Worth",
+  "MY_WORTH_DESC": "My Worth is your personal estate tracker of what you own. It helps you keep record all your assets in one place.",
+  "MY_WORTH_DESC_1": "Analyse your worth by listing your assets and visualising the data."
 }

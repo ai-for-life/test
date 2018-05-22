@@ -71,4 +71,18 @@ export class TutorialPage {
     this.menu.enable(true);
   }
 
+
+  redirectToLogin() {
+    this.navCtrl.setRoot('LoginPage', {}, {
+      animate: true,
+      direction: 'forward'
+    });
+  }
+
+  redirectToRegister() {
+    this.navCtrl.setRoot('SignupPage', {}, {
+      animate: true,
+      direction: 'forward'
+    });
+  }
 }
