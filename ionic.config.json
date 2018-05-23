@@ -1,6 +1,6 @@
 {
   "name": "wil",
-  "app_id": "",
+  "app_id": "0f01f248",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
